@@ -3,13 +3,13 @@ import './App.css';
 import Card from './components/Card'
 
 class App extends Component {
- 
+    
     state = {
-      starwarsChars: []
+      starwarsChars: []  
     };
   
 
-  componentDidMount = () => {
+  componentDidMount = () => { //Binding with arrow function
     this.getCharacters('https://swapi.co/api/people/');
   }
 
@@ -30,14 +30,14 @@ class App extends Component {
   };
 
   render() {
-    const {starwarsChars} = this.state;
+    const {starwarsChars} = this.state; //ES6 Destructuring
     return (
       <div className="App">
       <div className="container">
-        {starwarsChars.map(character =>
+        {starwarsChars.map(character => //  mapping
         <Card
-         {...character}
-         key={character.created}
+         {...character} // use of ES6 for values with spread operator
+         key={character.created} //unique key equal exact time created
          />
         )}
         </div>

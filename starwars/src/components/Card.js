@@ -1,12 +1,12 @@
 import React from 'react';
-import "./StarWars.css"
+import "./StarWars.css" //import of style
 
 
 
 
 
- class  Card extends React.Component {
-    picture = () => {
+ class  Card extends React.Component { 
+    picture = () => {  // if statement that matches img with name
         if (this.props.name === "Luke Skywalker") {
             return 'https://www.conservapedia.com/images/b/bb/Luke_Skywalker.jpg'
         } else if (this.props.name === "C-3PO") {
@@ -31,9 +31,10 @@ import "./StarWars.css"
     }
 
     render () {
-    const {name, birth_year, gender, mass, eye_color} = this.props
+    const {name, birth_year, gender, mass, eye_color} = this.props // es6 destructuring
     return (
-         <div className="flip-card" >
+        //3D flip card
+         <div className="flip-card" > 
          <div className="flip-card-inner">
           <div className="flip-card-front">
             <img src={this.picture(name)} alt={name} />
