@@ -21,4 +21,4 @@
      When state update so do our components making them 'reactive'.
 
 1.  Describe props.
-    Props are that data that we pass around that our users will interact with.
+    Props are the data that we pass around that our users will interact with.
