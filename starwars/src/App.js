@@ -36,7 +36,7 @@ class App extends Component {
       <div className="container">
         {starwarsChars.map(character => //  mapping
         <Card
-         {...character} // use of ES6 for values with spread operator
+         {...character} // use of ES6 for name/value pairs with spread operator
          key={character.created} //unique key equal exact time created
          />
         )}
