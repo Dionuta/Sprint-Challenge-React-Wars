@@ -3,14 +3,13 @@ import './App.css';
 import Card from './components/Card'
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
+ 
+    state = {
       starwarsChars: []
     };
-  }
+  
 
-  componentDidMount() {
+  componentDidMount = () => {
     this.getCharacters('https://swapi.co/api/people/');
   }
 
