@@ -45,8 +45,8 @@ import "./StarWars.css" //import of style
                      <h2> {name} </h2> 
                      <p>Born: {birth_year}</p> 
                      <p>Mass: {mass}</p>
-                     <p>Gender: {gender}</p>
-                     <p>Eye Color: {eye_color}</p>
+                     <p>Gender: {gender.charAt(0).toUpperCase() + gender.slice(1)}</p>
+                     <p>Eye Color: {eye_color.charAt(0).toUpperCase() + eye_color.slice(1)}</p>
                 </div>
                 <div className="clouds"></div>
           </div>  
