@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
+import Card from './components/Card'
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      starwarsChars: []
+    
+    state = {
+      starwarsChars: []  
     };
-  }
+  
 
-  componentDidMount() {
+  componentDidMount = () => { //Binding with arrow function
     this.getCharacters('https://swapi.co/api/people/');
   }
 
@@ -30,9 +30,17 @@ class App extends Component {
   };
 
   render() {
+    const {starwarsChars} = this.state; //ES6 Destructuring
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+      <div className="container">
+        {starwarsChars.map(character => //  mapping
+        <Card
+         {...character} // use of ES6 for name/value pairs with spread operator
+         key={character.created} //unique key equal exact time created
+         />
+        )}
+        </div>
       </div>
     );
   }

@@ -4917,6 +4917,13 @@ package-json@^4.0.0:
     registry-url "^3.0.3"
     semver "^5.1.0"
 
+pagination-component@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/pagination-component/-/pagination-component-1.6.0.tgz#aee14a4f5baf6e38aa94738ce0c7497b887fb233"
+  integrity sha512-cthwmHe00sG3tHQojXOgjPuKAAF5TrBYZZGH+7DSLaKd2d2LuRdG+sSqVLKZfewhGydERDDe11utcL2g93pyIA==
+  dependencies:
+    prop-types "^15.5.10"
+
 pako@~1.0.5:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.6.tgz#0101211baa70c4bca4a0f63f2206e97b7dfaf258"
